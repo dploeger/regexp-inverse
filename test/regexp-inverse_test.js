@@ -25,7 +25,7 @@ var RegExpInverse = require('../lib/regexp-inverse.js');
 exports['regexp-inverse'] = {
     'test': function (test) {
         test.expect(1);
-        // tests here
+
         var regExp = new RegExpInverse('.*');
         test.equal(
             regExp.test('foobar'),
@@ -37,7 +37,7 @@ exports['regexp-inverse'] = {
     },
     'exec': function (test) {
         test.expect(2);
-        // tests here
+
         var regExp = new RegExpInverse('somethingelse');
 
         var matches = regExp.exec('foobar');
@@ -55,4 +55,17 @@ exports['regexp-inverse'] = {
 
         test.done();
     },
+    'testtrue': function (test) {
+        test.expect(1);
+
+        var regExp = new RegExpInverse('foo');
+        test.equal(
+            regExp.test('bar'),
+            true,
+            'test returned wrong result.'
+        );
+
+        test.done();
+
+    }
 };
