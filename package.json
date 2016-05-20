@@ -1,7 +1,7 @@
 {
     "name": "regexp-inverse",
     "description": "The inverted version of the native JavaScript RegExp object.",
-    "version": "1.0.0-beta.1",
+    "version": "1.0.0-beta.2",
     "homepage": "https://github.com/dploeger/regexp-inverse",
     "author": {
         "name": "Dennis Ploeger",

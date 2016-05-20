@@ -67,5 +67,17 @@ exports['regexp-inverse'] = {
 
         test.done();
 
+    },
+    'testtostring': function (test) {
+        test.expect(1);
+
+        var regExp = new RegExpInverse('foo');
+        test.equal(
+            regExp.toString(),
+            '/foo/',
+            'toString returned wrong result.'
+        );
+
+        test.done();
     }
 };
