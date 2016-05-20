@@ -22,6 +22,6 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('gruntify-eslint');
 
     // Default task.
-    grunt.registerTask('default', ['eslint', 'nodeunit']);
+    grunt.registerTask('test', ['eslint', 'nodeunit']);
 
 };

@@ -26,7 +26,7 @@
         "node": ">= 0.10.0"
     },
     "scripts": {
-        "test": "grunt nodeunit"
+        "test": "grunt test"
     },
     "devDependencies": {
         "grunt": "~0.4.5",
