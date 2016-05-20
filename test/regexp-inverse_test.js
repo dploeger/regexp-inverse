@@ -68,6 +68,20 @@ exports['regexp-inverse'] = {
         test.done();
 
     },
+    'execnotempty': function (test) {
+        test.expect(1);
+
+        var regExp = new RegExpInverse('foo');
+        var matches = regExp.exec('foo');
+
+        test.ok(
+            matches === null,
+            "exec didn't return null"
+        );
+
+        test.done();
+
+    },
     'testtostring': function (test) {
         test.expect(1);
 
